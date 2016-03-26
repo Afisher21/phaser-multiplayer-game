@@ -11,10 +11,10 @@ var RemotePlayer = function (index, game, player, startX, startY) {
 
   this.player = game.add.sprite(x, y, 'enemy')
 
-  this.player.animations.add('left', [0, 1, 2, 3], 10, true);
-  this.player.animations.add('right', [5, 6, 7, 8], 10, true);
-  //this.player.animations.add('move', [0, 1, 2, 3, 4, 5, 6, 7], 20, true)
-  //this.player.animations.add('stop', [3], 20, true)
+  //this.player.animations.add('left', [0, 1, 2, 3], 10, true);
+  //this.player.animations.add('right', [5, 6, 7, 8], 10, true);
+  this.player.animations.add('move', [0, 1, 2, 3, 4, 5, 6, 7], 20, true)
+  this.player.animations.add('stop', [3], 20, true)
 
   this.player.anchor.setTo(0.5, 0.5)
 
